@@ -7,9 +7,15 @@ const addNum = {
 function addNums (state = addNum, action) {
   switch (action.type) {
     case actionTypes.TODO_ADD:
-      return state.num + 1
+      return {
+        ...state,
+        list: action.data
+      }
     default: 
-      return state
+      return {
+        ...state,
+        list: 0
+      }
   }
 }
 
