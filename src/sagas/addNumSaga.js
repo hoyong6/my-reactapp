@@ -23,3 +23,14 @@ export function* addNumFlow() {
     })
   }
 }
+
+export function* submitInput() {
+  while (true) {
+   let res = yield take(actionTypes.SUBMITINPUT) // 查看返回的函数到底是什么
+   console.log(res)
+   yield put({
+    type: actionTypes.SUBMITINPUT,
+    data: res.value
+  })
+  }
+}

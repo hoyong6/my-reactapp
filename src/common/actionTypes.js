@@ -2,6 +2,7 @@
 const actionTypes = {
   TODO_ADD: 'TODO_ADD',
   ERROR: 'ERROR',
+  SUBMITINPUT: 'SUBMITINPUT'
 }
 
 export {actionTypes}

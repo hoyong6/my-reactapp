@@ -1,9 +1,10 @@
 // reducer主入口
 import {combineReducers} from 'redux'
-import addNums from './addNums'
+import {addNums, submitInput} from './addNums'
 
 const reducer = combineReducers({
-  addNums
+  addNums,
+  submitInput
 })
 
 export default reducer

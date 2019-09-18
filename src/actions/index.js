@@ -7,3 +7,10 @@ export function addItem(value) {
     value
   }
 }
+
+export function submitInput(value) {
+  return {
+    type: actionTypes.SUBMITINPUT,
+    value
+  }
+}
