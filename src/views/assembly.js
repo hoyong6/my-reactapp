@@ -2,6 +2,7 @@ import React from 'react'
 import FancyBorder from '../components/fancyBorder'
 import Dialog from '../components/dialog'
 import Canvas from '../components/canvas'
+import Playcanvas from '../components/playcanvas'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { addItem, submitInput } from '../actions'
@@ -29,7 +30,7 @@ class Assembly extends React.Component { // 这个组件训练组价嵌套
                 this.submitInput(title)
               }
             }
-                    }}
+          }}
         />
         <FancyBorder color='blue'>
           <h1 className='Dialog-title'>
@@ -44,6 +45,7 @@ class Assembly extends React.Component { // 这个组件训练组价嵌套
           message='Thank you for visiting our spacecraft!'
         />
         <Canvas />
+        <Playcanvas />
       </div>
     )
   }
